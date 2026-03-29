@@ -1,0 +1,46 @@
+{
+    "coord": {
+        "lon": 9.4676,
+        "lat": 53.8669
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 6.28,
+        "feels_like": 3.53,
+        "temp_min": 5.65,
+        "temp_max": 6.66,
+        "pressure": 1020,
+        "humidity": 84,
+        "sea_level": 1020,
+        "grnd_level": 1019
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.82,
+        "deg": 70,
+        "gust": 8.84
+    },
+    "clouds": {
+        "all": 7
+    },
+    "dt": 1774114679,
+    "sys": {
+        "type": 2,
+        "id": 2107524,
+        "country": "DE",
+        "sunrise": 1774070559,
+        "sunset": 1774114563
+    },
+    "timezone": 3600,
+    "id": 6552207,
+    "name": "Krempermoor",
+    "cod": 200
+}

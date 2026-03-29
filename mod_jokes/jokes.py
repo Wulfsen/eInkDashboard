@@ -50,8 +50,10 @@ class Jokes:
             " — ": "\n-\n",
             " —": "\n-",
             "— ": "-\n"
-            } # — 
-        self.canvas.addMultilineText(txt=joke, ft="RobotoLight12", fillColor="black", replaceStr=replaceStrDict)
+            }
+        position = self.canvas.width/2, self.canvas.height/2
+        width = self.canvas.width - 2 * self.canvas.margins
+        self.canvas.addMultilineText(txt=joke, ft="RobotoLight12", fillColor="black", position=position, width=width, replaceStr=replaceStrDict, anc="mm")
         self.canvas.showImage()
     
     # fr = canvas.Canvas(200, 100, bgcolor="white")
