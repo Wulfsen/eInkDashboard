@@ -19,10 +19,10 @@ class Canvas:
     def load_Fonts(self, fontConfig: dict) -> None:
         path = os.getcwd() + "/fonts/"
         
-        self.addTTF(name="header", filePath=path + fontConfig['font_header'], size=int(fontConfig['size_header']))
-        self.addTTF(name="subheader", filePath=path + fontConfig['font_subheader'], size=int(fontConfig['size_subheader']))
-        self.addTTF(name="subheader_bold", filePath=path + fontConfig['font_subheader_bold'], size=int(fontConfig['size_subheader']))
-        self.addTTF(name="body", filePath=path + fontConfig['font_body'], size=int(fontConfig['size_body']))
+        self.addTTF(name="header", filePath=path + fontConfig['font_header'], size=fontConfig['size_header'])
+        self.addTTF(name="subheader", filePath=path + fontConfig['font_subheader'], size=fontConfig['size_subheader'])
+        self.addTTF(name="subheader_bold", filePath=path + fontConfig['font_subheader_bold'], size=fontConfig['size_subheader'])
+        self.addTTF(name="body", filePath=path + fontConfig['font_body'], size=fontConfig['size_body'])
     
     def getStrLength(self, text: str, fontName: str) -> int:
         font = self.fonts[fontName]

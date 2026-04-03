@@ -8,8 +8,8 @@ from canvas import canvas
 
 
 class Weather:
-    def __init__(self, width: int, height: int, configFonts:dict, owmConfig: dict[str, str]) -> None:
-        self.canvas = canvas.Canvas(width, height, configFonts, margins=10, bgcolor="grey")
+    def __init__(self, width: int, height: int, canvasConfig:dict, owmConfig: dict[str, str]) -> None:
+        self.canvas = canvas.Canvas(width, height, canvasConfig, margins=10, bgcolor="grey")
         self.owm_api_key = owmConfig['api_key']
         self.lat = owmConfig['latitude']
         self.long = owmConfig['longitude']
